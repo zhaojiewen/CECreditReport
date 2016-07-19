@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
 		   This Pod contains CECreditReport SDK. For more informations,please read http://fuqian.la/documentation.html (in chinese).
                    DESC
 
-  s.homepage     = "http://EXAMPLE/CECreditReport"
+  s.homepage     = "https://github.com/zhaojiewen/CECreditReport.git"
 
   s.license      = "MIT"
 
@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "7.0"
 
   s.ios.deployment_target = "7.0"
-  s.source       = { :git => "http://EXAMPLE/CECreditReport.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/zhaojiewen/CECreditReport.git", :tag => "#{s.version}" }
 
   s.source_files  = "CECreditReport", "CECreditReport/*.h"
   s.preserve_paths = "CECreditReport/Frameworks/*.a"
