@@ -27,7 +27,7 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/zhaojiewen/CECreditReport.git", :tag => "#{s.version}" }
 
   s.source_files  = "CECreditReport", "CECreditReport/*.h"
-  s.preserve_paths = "CECreditReport/Frameworks/*.a"
+  s.preserve_paths = "CECreditReport/*.a"
   s.public_header_files = "CECreditReport/*.h"
   s.resources = "CECreditReport/Resources/*"
   s.frameworks = "Foundation", "Security","SystemConfiguration"
