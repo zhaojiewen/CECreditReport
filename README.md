@@ -1,9 +1,5 @@
 
 #CECreditReport SDK 接入指南
-## 演示项目
-查看并运行CECreditReportDemo/CECreditReportDemo.xcodeproj
-
-![CECreditReportDemo]()
 
 
 ## 1. 集成准备
@@ -65,6 +61,7 @@ Cocoapods 安装完成后，在你的项目根目录创建一个 Podfile 文件�
     //*** 必须生成私钥请查看RSA密码生成说明文件 ***//    creditReportManager.p12Path = [[NSBundle mainBundle] pathForResource:@"private_key" ofType:@"p12"]	creditReportManager.p12Password = @"xxxxxxx";
 	    //*** 可自定义导航栏背景色和导航栏title样式***//    [CECreditReportManager sharedInstance].navigationBackgroundColor = [UIColor blueColor];
     [CECreditReportManager sharedInstance].navigationTitleAttributes = @{NSFontAttributeName:[UIFont systemFontOfSize:18],NSForegroundColorAttributeName:[UIColor colorWithRed:1 green:0 blue:0 alpha:0]};    __weak typeof(self) weakSelf = self;    creditReportManager.dismissBlock = ^(){        __strong typeof(weakSelf) strongSelf = weakSelf;      //*** 可选, 征信退出后,处理适配操作，比如导航栏、状态栏等. ***//    };    [creditReportManager startGetCRP];
+    
    
 ## 参数说明
 
@@ -78,11 +75,17 @@ Cocoapods 安装完成后，在你的项目根目录创建一个 Podfile 文件�
 | navigationBackgroundColor   | 否 |            设置导航栏背景色, 默认蓝色,如果设置为白色，需要更换Resource内 “nv_back” 图片资源 |
 | navigationTitleAttributes   | 否 |            设置导航栏title 样式, 默认18字号 , 白色 |
 
-## 文档
+## 演示项目
+查看并运行`CECreditReportDemo/CECreditReportDemo.xcodeproj`
+效果如下
 
+![CECreditReportDemo](demo1.png)
     
 ## 系统要求
 This SDK requires `iOS 7.0+` and `Xcode 7.0+`
 
 ## 许可证
-使用 MIT 许可证，详情见 LICENSE 文件。
+使用 MIT 许可证，详情见 LICENSE 文件。
+
+## 联系我
+如有问题请联系我(haiqingxu@creditease.cn)
