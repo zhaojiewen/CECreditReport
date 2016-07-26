@@ -4,6 +4,7 @@
 
 ## 1. 集成准备
 ###  1.1. 联系开发申请商户号 `mechId` 和 p12文件
+>无论以何种方式安装SDK，都需要联系开发拿到`商户ID`和`p12文件`及`p12密码`,添加`p12文件`到工程目录
 
 ### 1.2 安装SDK
 
@@ -23,11 +24,10 @@ Cocoapods 安装完成后，在你的项目根目录创建一个 Podfile 文件�
 	pod install
 
 ### 手动导入SDK
-#### 按照以下步骤将SDK导入到您的项目中。
+#### 下载压缩包，按照以下步骤将SDK导入到您的项目中。
 
-* 解压 CECreditReportSDK 压缩文件；
-* 添加 CECreditReportManager.h , libCECreditReportSDK.a ,Resource.bundle添加到您的 iOS 工程中；
-* 根据 `RSA密码生成说明文件 `生成的私钥,添加私钥文件到工程
+* 解压 `CECreditReport-master` 压缩文件；
+* 添加 `CECreditReport`文件夹下的 `CECreditReportManager.h` , `libCECreditReportSDK.a `,`Resource.bundle`添加到您的 `iOS 工程中`；
 
 <b>提醒:</b>`记得勾选 "Copy items if needed"`
 
