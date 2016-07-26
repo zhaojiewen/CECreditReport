@@ -109,7 +109,6 @@
     
     [CECreditReportManager sharedInstance].p12Path = [[NSBundle mainBundle] pathForResource:@"private_key" ofType:@"p12"];
     [CECreditReportManager sharedInstance].p12Password = @"1qaz@WSX";
-    [CECreditReportManager sharedInstance].navigationBackgroundColor = [UIColor blackColor];
     [[CECreditReportManager sharedInstance] startGetCRP];
     
 }
