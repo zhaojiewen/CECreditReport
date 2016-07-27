@@ -29,7 +29,7 @@ Pod::Spec.new do |s|
   s.source_files  = "CECreditReport", "CECreditReport/*.h"
   s.preserve_paths = "CECreditReport/*.a"
   s.public_header_files = "CECreditReport/*.h"
-  s.resources = "CECreditReport/Resources/*"
+  s.resources = "CECreditReport/Resource.bundle"
   s.frameworks = "Foundation", "Security","SystemConfiguration"
   s.vendored_libraries = "CECreditReport/libCECreditReportSDK.a"
   s.requires_arc = true
